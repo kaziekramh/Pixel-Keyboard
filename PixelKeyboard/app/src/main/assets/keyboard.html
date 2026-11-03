@@ -1,0 +1,118 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>পিক্সেল বাংলা কীবোর্ড</title><style>
+:root{--pg:#f6f5fa;--ps:#fff;--pt:#1c1b22;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--pg:#111114;--ps:#1d1d22;--pt:#e8e8ee}}
+:root[data-theme=dark]{--pg:#111114;--ps:#1d1d22;--pt:#e8e8ee}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}html,body{height:100%;margin:0}
+body{background:var(--pg);color:var(--pt);font-family:system-ui,"Noto Sans Bengali","Hind Siliguri",sans-serif}
+.w{max-width:412px;height:100%;margin:auto;display:flex;flex-direction:column}
+#t{flex:1;min-height:0;margin:12px;padding:16px;border:0;border-radius:24px;background:var(--ps);color:var(--pt);font-size:20px;line-height:1.6;font-family:inherit;resize:none;outline:0}
+[data-t=pixel]{--bg:#050506;--k:#17181b;--f:#17181b;--tx:#f2eeee;--ac:#c9302c;--at:#fff;--hn:#a9adb3}
+[data-t=light]{--bg:#eceff1;--k:#fff;--f:#cfd8dc;--tx:#202124;--ac:#1a73e8;--at:#fff;--hn:#80868b}
+[data-t=dark]{--bg:#2b2d31;--k:#44474d;--f:#383b41;--tx:#e8eaed;--ac:#8ab4f8;--at:#0b1b3a;--hn:#a0a4aa}
+[data-t=amoled]{--bg:#000;--k:#17181c;--f:#0d0e11;--tx:#f1f3f4;--ac:#7ee0c0;--at:#00251a;--hn:#7d8288}
+[data-t=flag]{--bg:radial-gradient(circle at 46% 56%,#f42a41 0 24%,#006a4e 24.5%);--k:rgba(255,255,255,.17);--f:rgba(0,0,0,.3);--tx:#fff;--ac:#fff;--at:#006a4e;--hn:#c8eadf}
+.kb{font-family:Doto,"Noto Sans Bengali","Hind Siliguri",system-ui,monospace;font-weight:700;flex:none;height:291px;position:relative;display:flex;flex-direction:column;background:var(--bg);color:var(--tx);user-select:none;-webkit-user-select:none;touch-action:manipulation;overflow:hidden}
+.st{height:46px;flex:none;display:flex;align-items:center}
+.st>*{flex:1;min-width:0;text-align:center;font-size:18px;line-height:46px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
+.st .tg{flex:none;width:44px;height:44px;margin:0 4px;border-radius:50%;background:var(--f);color:var(--tx)}.ti,.tg{display:flex;align-items:center;justify-content:center}.st .sb{font-size:20px;height:30px;line-height:30px}.st .sb+.sb{border-left:2px solid rgba(128,128,128,.3)}[data-t=pixel] .st .sb+.sb{border-color:#e8b830}
+.ky{flex:1;display:flex;flex-direction:column;padding:0 .5px 3px}
+.r{flex:1;display:flex;min-height:0;margin:3px 0}.r>*{margin:0 2.5px}.g{flex:.5}
+.k{flex:1;min-width:0;border-radius:14px;background:var(--k);display:flex;align-items:center;justify-content:center;font-size:27px;position:relative;box-shadow:0 1px 0 rgba(0,0,0,.2);cursor:pointer}
+.k.f{background:var(--f);font-size:19px}.k.on,.k.ac{background:var(--ac);color:var(--at)}
+.k.d{filter:brightness(.85);transform:scale(.96)}
+.k i,.k em{position:absolute;top:4px;right:6px;font-style:normal;font-size:11px;line-height:1;color:var(--hn);font-weight:400}.k em{right:auto;left:6px}[data-t=pixel] .k{box-shadow:none}[data-t=pixel] .cy{background:#e8b830;color:#111}[data-t=pixel] .cb{background:#2a5090}[data-t=pixel] .ck{background:#17181b}[data-t=pixel] .cw{background:#efeaea;color:#111}[data-t=pixel] .cr{background:#c9302c}[data-t=pixel] .cy i,[data-t=pixel] .cy em,[data-t=pixel] .cw i,[data-t=pixel] .cw em{color:#6b6b6b}.ph .k{font-family:Doto,monospace}.pc{font-family:system-ui,"Noto Sans Bengali",sans-serif;font-weight:500}
+.pn{position:absolute;top:0;right:0;bottom:0;left:0;background:var(--bg);display:flex;flex-direction:column;z-index:5}.pn[hidden]{display:none}
+.ph{height:46px;flex:none;display:flex;align-items:center;gap:6px;padding:0 8px}.ph b{flex:1;font-size:16px}
+.pbt{padding:7px 12px;border-radius:16px;background:var(--f);font-size:13px;cursor:pointer}
+.pc{flex:1;overflow:auto;padding:4px 10px 10px}.mt{color:var(--hn);font-size:14px;margin:6px 2px}
+.it{display:flex;justify-content:space-between;gap:8px;padding:11px 14px;margin-bottom:6px;border-radius:14px;background:var(--k);font-size:15px;cursor:pointer}
+.it span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ch{display:inline-block;padding:6px 12px;margin:3px;border-radius:14px;background:var(--k);cursor:pointer}
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.sw{background:var(--bg);color:var(--tx);height:64px;border-radius:16px;display:flex;align-items:center;gap:10px;padding:0 14px;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(128,128,128,.4)}
+.sw i{width:26px;height:26px;border-radius:8px;background:var(--k);box-shadow:0 0 0 1px rgba(128,128,128,.4)}.sw.on{box-shadow:inset 0 0 0 3px var(--ac)}
+.tb{flex:1;text-align:center;font-size:19px;padding:6px 0;border-radius:12px;cursor:pointer}.tb.on{background:var(--f)}
+.eg{display:grid;grid-template-columns:repeat(8,1fr);align-content:start}.eg span{font-size:25px;text-align:center;padding:6px 0;cursor:pointer}.eg .mt{grid-column:1/-1}
+@font-face{font-family:Doto;src:url(doto.ttf);font-weight:100 900}#t{display:none!important}.w{max-width:none;justify-content:flex-end}html,body{background:#000;overflow:hidden}*{-webkit-tap-highlight-color:transparent}</style></head><body><div class="w">
+<textarea id="t" inputmode="none" placeholder="এখানে লিখুন… যেমন: ami bhalo achi"></textarea>
+<div id="kb" class="kb"><div id="st" class="st"></div><div id="ky" class="ky"></div><div id="pn" class="pn" hidden></div></div></div>
+<script>
+const $=s=>document.querySelector(s),ta=$('#t'),kb=$('#kb'),ky=$('#ky'),st=$('#st'),pn=$('#pn');
+const ls={g(k,d){try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}},s(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const S={lang:'bn',sh:0,sym:0,tool:0,p:0,et:1,comp:'',ce:0,L:[],theme:ls.g('th','pixel'),clip:ls.g('cl',[]),user:ls.g('ud',[]),rec:ls.g('rc',[])};
+const C={kkh:'ক্ষ',gg:'জ্ঞ',kh:'খ',gh:'ঘ',ch:'ছ',jh:'ঝ',Th:'ঠ',Dh:'ঢ',th:'থ',dh:'ধ',ph:'ফ',bh:'ভ',sh:'শ',Sh:'ষ',Rh:'ঢ়',NG:'ঞ',Ng:'ঙ',k:'ক',g:'গ',c:'চ',j:'জ',T:'ট',D:'ড',N:'ণ',t:'ত',d:'দ',n:'ন',p:'প',f:'ফ',b:'ব',v:'ভ',m:'ম',z:'য',r:'র',l:'ল',S:'শ',s:'স',h:'হ',R:'ড়',y:'য়',Y:'য়',x:'ক্স',q:'ক'};
+const V={oi:['ঐ','ৈ'],ou:['ঔ','ৌ'],rri:['ঋ','ৃ'],o:['অ',''],a:['আ','া'],i:['ই','ি'],I:['ঈ','ী'],u:['উ','ু'],U:['ঊ','ূ'],e:['এ','ে'],O:['ও','ো']};
+const X={ng:'ং',':':'ঃ','^':'ঁ',w:'ও'};
+const HN={a:'আ',b:'ব',c:'চ',d:'দ',e:'এ',f:'ফ',g:'গ',h:'হ',i:'ই',j:'জ',k:'ক',l:'ল',m:'ম',n:'ন',o:'অ',p:'প',q:'ক',r:'র',s:'স',t:'ত',u:'উ',v:'ভ',w:'ও',x:'ক্স',y:'য়',z:'য'},HS={T:'ট',D:'ড',N:'ণ',S:'শ',O:'ও',I:'ঈ',U:'ঊ',R:'ড়'};
+const BD='আমি আমার আমরা আমাদের আপনি আপনার তুমি তোমার তারা আছি আছো আছেন আছে ভালো ভালোবাসি ভালোবাসা খুব বাংলা বাংলাদেশ ধন্যবাদ কেমন কোথায় কেন কী কীভাবে কখন এখন আজ কাল আগামীকাল সকাল দুপুর রাত বন্ধু পরিবার মানুষ দেশ জীবন কাজ সময় বই স্কুল পানি খাবার শুভ শুভেচ্ছা শুভরাত্রি স্বাগতম দুঃখিত অনেক একটু হ্যাঁ ঠিক সুন্দর মোবারক ঈদ জন্মদিন বিদায় আবার আসুন যাচ্ছি করছি করব বলুন প্রিয়'.split(' ');
+const EN='the and that have for not with you this but from they say her she will one all would there their what out about who get which when make can like time just know take people into year your good some could them see other than then now look only come over think also back after use two how our work first well way even new want because any these give day most hello thanks please love happy welcome morning night friend keyboard Bangladesh'.split(' ');
+const EM=[['😀','😀 😃 😄 😁 😆 😅 😂 🤣 😊 😇 🙂 😉 😍 🥰 😘 😋 😜 🤪 🤔 🤗 😎 🥳 😏 😒 😔 😢 😭 😤 😡 😱 😳 🥺 😴 🤒 🤮 🙄 😬 🤐 🤫 🥱'],['👍','👍 👎 👌 ✌️ 🤞 🤟 🤘 🤙 👈 👉 👆 👇 👋 ✋ 🖖 👏 🙌 🤝 🙏 💪 ✍️ 🤳 👀 🧠'],['❤️','❤️ 🧡 💛 💚 💙 💜 🖤 🤍 💔 💕 💞 💓 💗 💖 💘 ✨ ⭐ 🌟 🔥 💯 💥 🎉 🎊 🎁 🎂 🌹 ☀️ 🌙 ⚽ 🏏 🎵 📱 💻 ✅ ❌ ❓ ❗'],['🐶','🐶 🐱 🐭 🐰 🦊 🐻 🐼 🐨 🐯 🦁 🐮 🐷 🐸 🐵 🙈 🐔 🐧 🐦 🦆 🦉 🐝 🦋 🐢 🐍 🐙 🐬 🐳 🐘 🦒 🐅 🌳 🌸 🌴'],['🍔','🍎 🍊 🍋 🍌 🍉 🍇 🍓 🍒 🍑 🥭 🍍 🥥 🍅 🥕 🌽 🍞 🧀 🍳 🍔 🍟 🍕 🌭 🍜 🍝 🍣 🍚 🍛 🍦 🍩 🍪 🍫 🍿 ☕ 🍵 🥤'],['🇧🇩','🇧🇩 🇮🇳 🇺🇸 🇬🇧 🇸🇦 🇵🇰 🇯🇵 🇨🇦 🇦🇺 🇩🇪 🇫🇷 🇹🇷 🇦🇪 🇲🇾 🇸🇬 🇮🇩 🏳️ 🚩']];
+const TH=[['pixel','পিক্সেল'],['light','লাইট'],['dark','ডার্ক'],['amoled','এমোলেড'],['flag','জাতীয় পতাকা']];
+const esc=s=>s.replace(/[&<>"]/g,c=>'&#'+c.charCodeAt(0)+';');
+const HY={q:'1',w:'2',e:'3',r:'4',t:'5',y:'6',u:'7',i:'8',o:'9',p:'0',a:'@',s:'#',d:'&',f:'*',g:'-',h:'!',j:'?',k:'(',l:')',z:'"',b:"'",n:':',m:'/'};
+const CL={};[...'qwertyuiopasdfghjklzxcvbnm'].forEach((c,i)=>CL[c]='ybkwrbwrykwrbkywrbkkywrbky'[i]);
+const IC={sh:['..#..','.#.#.','#...#'],sh2:['..#..','.###.','#####','..#..','..#..'],cap:['..#..','.###.','#####','..#..','..#..','.....','#####'],
+bs:['..#####..','.#.....#.','#..#.#..#','#...#...#','#..#.#..#','.#.....#.','..#####..'],en:['......#','......#','.#....#','#######','.#.....'],
+sm:['..#####..','.#.....#.','#.......#','#..#.#..#','#.......#','#.#...#.#','#..###..#','.#.....#.','..#####..'],
+gl:['..#####..','.#..#..#.','#...#...#','#########','#...#...#','#########','#...#...#','.#..#..#.','..#####..'],
+dt:['#.#.#'],x:['#...#','.#.#.','..#..','.#.#.','#...#'],cl:['..###..','#.###.#','#.....#','#.###.#','#.....#','#.###.#','#######'],
+pa:['..#####..','.#.....#.','#.##..#.#','#.......#','#...##..#','.#.....#.','..#####..'],bk:['#####.#####','#...#.#...#','#.#.#.#.#.#','#...#.#...#','#####.#####']};
+const ic=(n,u=4)=>{const g=IC[n],w=g[0].length;return `<svg viewBox="0 0 ${w} ${g.length}" width="${w*u}" height="${g.length*u}" fill="currentColor">`+g.map((r,y)=>[...r].map((c,x)=>c=='#'?`<circle cx="${x+.5}" cy="${y+.5}" r=".4"/>`:'').join('')).join('')+'</svg>'};
+// অভ্র ফোনেটিক
+function bn(s){let o='',p=0,i=0;while(i<s.length){let m=0;for(let n=3;n&&!m;n--){const x=s.substr(i,n);if(x.length<n)continue;
+if(C[x]){o+=(p?'্':'')+(p&&x=='y'?'য':C[x]);p=1;m=n}else if(V[x]){o+=V[x][p?1:0];p=0;m=n}else if(X[x]){o+=X[x];p=0;m=n}}
+if(!m){const l=s[i].toLowerCase();if(l!=s[i]){s=s.slice(0,i)+l+s.slice(i+1);continue}o+=s[i];p=0;m=1}i+=m}return o}
+const learn=w=>{if(w.length>2&&!BD.includes(w)&&!EN.includes(w.toLowerCase())&&!S.user.includes(w)){S.user.unshift(w);S.user.length=Math.min(S.user.length,100);ls.s('ud',S.user)}};
+const clip=t=>{if(!t)return;S.clip=[t,...S.clip.filter(x=>x!=t)].slice(0,30);ls.s('cl',S.clip)};
+function put(t,d=0){try{Android.put(d,t)}catch(e){}let a=ta.selectionStart,b=ta.selectionEnd;if(a==b)a=Math.max(0,a-d);ta.value=ta.value.slice(0,a)+t+ta.value.slice(b);ta.setSelectionRange(a+t.length,a+t.length)}
+const setC=n=>{const o=bn(S.comp).length;S.comp=n;put(bn(n),o)};
+const commit=l=>{if(S.comp){const w=bn(S.comp);S.comp='';l&&learn(w)}};
+function bs(){if(S.comp)return setC(S.comp.slice(0,-1));const a=ta.selectionStart;if(a!=ta.selectionEnd)return put('');const v=ta.value.slice(0,a);put('',/[\uDC00-\uDFFF]$/.test(v)||/\uFE0F$/.test(v)?2:1)}
+function sy(c){commit(1);put(S.lang=='bn'?(c=='.'&&!S.sym?'।':/\d/.test(c)?'০১২৩৪৫৬৭৮৯'[c]:c):c)}
+function ch(c,raw){if(S.sym||c==','||c=='.')return sy(c);if(S.sh&&!raw)c=c.toUpperCase();S.lang=='bn'?setC(S.comp+c):put(c);if(S.sh==1&&!raw)S.sh=0}
+function sp(){if(S.comp)commit(1);else if(S.lang=='en'){const m=/[A-Za-z']{3,}$/.exec(ta.value.slice(0,ta.selectionStart));m&&learn(m[0])}put(' ')}
+const A={t:0,sh(){const n=Date.now();S.sh=S.sh==2?0:S.sh==1?(n-A.t<400?2:0):1;A.t=n},bs,sp,en(){commit(1);put('\n')},sym(){commit(1);S.sym=1},abc(){S.sym=0;pan(0)},lang(){commit(1);S.lang=S.lang=='bn'?'en':'bn';S.sh=0;S.sym=0},emo(){commit(1);pan('emo')}};
+function pick(i){const x=S.L[i];if(!x)return;if(S.lang=='bn'){if(S.comp)learn(x);put(x+' ',bn(S.comp).length);S.comp=''}else{const m=/[A-Za-z']+$/.exec(ta.value.slice(0,ta.selectionStart));put(x+' ',m?m[0].length:0)}}
+let sig='';
+function keys(){const g=S.lang+S.sh+S.sym;if(g==sig)return;sig=g;const B=S.lang=='bn';
+const lk=c=>{const u=S.sh?c.toUpperCase():c,h=B?(S.sh&&HS[u])||HN[c]||'':'';return `<div class="k c${CL[c]}" data-c="${c}">${u}<em>${h}</em><i>${HY[c]||''}</i></div>`};
+let n=0;const kk=(c,l=c)=>`<div class="k c${'ybkwr'[n++%5]}" data-c="${c=='"'?'&quot;':c}">${l}</div>`,r=s=>`<div class=r>${s}</div>`,g5='<u class=g></u>',bk=`<div class="k f cw" data-a=bs style="flex:1.5">${ic('bs',3.6)}</div>`;
+let h;if(S.sym){const s3=B?[...'ংঃঁৎ্।!?']:[...'*"\':;!?/'];
+h=r([...'1234567890'].map(c=>kk(c,B?'০১২৩৪৫৬৭৮৯'[c]:c)).join(''))+r(g5+[...'@#৳%&-+()'].map(c=>kk(c)).join('')+g5)+r(s3.map(c=>kk(c)).join('')+bk)}
+else h=r([...'qwertyuiop'].map(lk).join(''))+r(g5+[...'asdfghjkl'].map(lk).join('')+g5)+r(`<div class="k f cy${S.sh?' on':''}" data-a=sh style="flex:1.5">${ic(S.sh==2?'cap':S.sh?'sh2':'sh',4.2)}</div>`+[...'zxcvbnm'].map(lk).join('')+bk);
+h+=r(`<div class="k f cr" data-a=${S.sym?'abc':'sym'} style="flex:1.3">${S.sym?'ABC':'?123'}</div><div class="k f cw" data-c=",">,</div><div class="k f cy" data-a=lang>${ic('gl',3.4)}</div><div class="k f cb" data-a=emo>${ic('sm',3.4)}</div><div class="k ck" data-a=sp style="flex:3;border-radius:14px;font-size:15px;color:var(--hn)">${B?'বাংলা (অভ্র)':'English'}</div><div class="k f ck" data-c=".">.</div><div class="k ac cr" data-a=en style="flex:1.3">${ic('en',4.6)}</div>`);ky.innerHTML=h}
+function strip(){if(S.tool){st.innerHTML=`<div class=tg data-z=tg>${ic('dt',4)}</div>`+[['clip','cl'],['theme','pa'],['dict','bk'],['emo','sm']].map(([k,i])=>`<div class=ti data-z="p:${k}">${ic(i,3.4)}</div>`).join('');return}
+let L=[],w;if(S.lang=='bn'){if(S.comp){w=bn(S.comp);L=[w];for(const x of[...S.user,...BD])if(x!=w&&x.startsWith(w)&&!L.includes(x))L.push(x)}else L=['আমি','আপনি','ধন্যবাদ']}
+else{const m=/[A-Za-z']+$/.exec(ta.value.slice(0,ta.selectionStart));if(m){w=m[0];L=[w];for(const x of[...S.user,...EN])if(x!=w&&x.toLowerCase().startsWith(w.toLowerCase())){const y=/^[A-Z]/.test(w)?x[0].toUpperCase()+x.slice(1):x;if(!L.includes(y))L.push(y)}}else L=['I','The','Thanks']}
+S.L=L=L.slice(0,3);st.innerHTML=`<div class=tg data-z=tg>${ic('sh',4.4)}</div>`+[0,1,2].map(i=>`<div class=sb data-z="pick:${i}">${esc(L[i]||'')}</div>`).join('')}
+function upd(k){if(S.lang=='en'&&!S.sym&&S.sh<2&&!k)S.sh=/(^|[.!?]\s|\n)$/.test(ta.value.slice(0,ta.selectionStart))?1:0;S.ce=ta.selectionStart;if(!S.p)ta.focus({preventScroll:true});keys();strip()}
+const hd=(t,b='')=>`<div class=ph><b>${t}</b>${b}<span class=pbt data-z=x>${ic('x',2.8)}</span></div>`;
+const P={
+clip:()=>hd('ক্লিপবোর্ড','<span class=pbt data-z=cp>কপি</span><span class=pbt data-z=ps>পেস্ট</span>')+`<div class=pc>${S.clip.length?S.clip.map((t,i)=>`<div class=it data-z="ci:${i}"><span>${esc(t)}</span><u data-z="cx:${i}">✕</u></div>`).join(''):'<p class=mt>কপি করা কিছু নেই। লেখা সিলেক্ট করে “কপি” চাপুন।</p>'}</div>`,
+theme:()=>hd('থীম')+'<div class="pc sg">'+TH.map(([k,n])=>`<div class="sw${S.theme==k?' on':''}" data-t="${k}" data-z="th:${k}"><i></i>${n}</div>`).join('')+'</div>',
+dict:()=>hd('অভিধান','<span class=pbt data-z=uc>সব মুছুন</span>')+`<div class=pc><p class=mt>বিল্ট-ইন শব্দ: ${BD.length+EN.length}। স্পেস চাপলে নতুন শব্দ নিজে থেকে শেখা হয়।</p>${S.user.map((w,i)=>`<span class=ch data-z="ux:${i}">${esc(w)} ✕</span>`).join('')||'<p class=mt>এখনো কোনো শেখা শব্দ নেই।</p>'}</div>`,
+emo:()=>{const T=[['🕘',S.rec.join(' ')],...EM],g=T[S.et]||T[1];return `<div class=ph><div class="k f" data-a=abc style="flex:none;width:52px;height:36px;font-size:14px">ABC</div>${T.map(([i],n)=>`<span class="tb${n==S.et?' on':''}" data-z="tab:${n}">${i}</span>`).join('')}<div class="k f" data-a=bs style="flex:none;width:44px;height:36px">${ic('bs',3)}</div></div><div class="pc eg">${g[1]?g[1].split(' ').map(e=>`<span data-z="e:${e}">${e}</span>`).join(''):'<p class=mt>এখনো কিছু নেই</p>'}</div>`}};
+function pan(n){S.p=n;pn.hidden=!n;if(n)pn.innerHTML=P[n]()}
+const Z={tg(){S.tool=!S.tool},pick(a){pick(+a)},p(a){S.tool=0;pan(a)},x(){pan(0)},
+th(a){S.theme=a;kb.dataset.t=a;ls.s('th',a);pan('theme')},
+ci(a){put(S.clip[a]);pan(0)},cx(a){S.clip.splice(a,1);ls.s('cl',S.clip);pan('clip')},
+cp(){let t='';try{t=Android.sel()}catch(e){}clip(t);pan('clip')},
+ps(){try{const t=Android.clip();if(t){clip(t);put(t);pan('clip')}}catch(e){}},
+ux(a){S.user.splice(a,1);ls.s('ud',S.user);pan('dict')},uc(){S.user=[];ls.s('ud',S.user);pan('dict')},
+e(a){put(a);S.rec=[a,...S.rec.filter(x=>x!=a)].slice(0,24);ls.s('rc',S.rec)},tab(a){S.et=+a;pan('emo')}};
+kb.addEventListener('click',e=>{const t=e.target.closest('[data-z]');if(!t)return;const z=t.dataset.z,i=z.indexOf(':'),f=i<0?z:z.slice(0,i);Z[f]&&Z[f](i<0?'':z.slice(i+1));upd(1)});
+kb.addEventListener('mousedown',e=>e.preventDefault());kb.addEventListener('contextmenu',e=>e.preventDefault());
+let T1,T2;const stop=()=>{clearTimeout(T1);clearInterval(T2);document.querySelectorAll('.d').forEach(x=>x.classList.remove('d'))};
+kb.addEventListener('pointerdown',e=>{const k=e.target.closest('.k');if(!k)return;e.preventDefault();k.classList.add('d');const a=k.dataset.a,c=k.dataset.c;
+c!=null?ch(c):A[a]();try{Android.v()}catch(x){}upd(a=='sh');
+if(a=='bs')T1=setTimeout(()=>{T2=setInterval(()=>{bs();upd()},55)},400);else if(c!=null&&!S.sym&&HY[c])T1=setTimeout(()=>{bs();sy(HY[c]);upd();try{Android.v()}catch(x){}},380)});
+['pointerup','pointercancel'].forEach(v=>document.addEventListener(v,stop));
+document.addEventListener('selectionchange',()=>{if(S.comp&&(ta.selectionStart!=S.ce||ta.selectionEnd!=S.ce)){S.comp='';strip()}});
+['copy','cut'].forEach(v=>ta.addEventListener(v,()=>clip(ta.value.slice(ta.selectionStart,ta.selectionEnd))));
+ta.addEventListener('keydown',e=>{if(e.ctrlKey||e.metaKey||e.altKey)return;const k=e.key;
+if(k=='Backspace'){e.preventDefault();bs()}else if(k=='Enter'){e.preventDefault();A.en()}else if(k==' '){e.preventDefault();sp()}
+else if(k.length==1){e.preventDefault();/[a-z]/i.test(k)?ch(k,1):sy(k)}else return;upd()});
+function sync(b,f){const c=ta.value.slice(0,ta.selectionStart);if(f||(b?!c.endsWith(b):c.length>0)){ta.value=b;ta.setSelectionRange(b.length,b.length);S.comp='';upd(1)}}
+function addClip(t){clip(t)}
+kb.dataset.t=S.theme;upd();
+</script></body></html>
